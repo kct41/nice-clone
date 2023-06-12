@@ -1,0 +1,108 @@
+/** MobNav **/
+
+.mobile{width:100%;}
+.header_mob{width:100%;position:sticky;top:0;z-index:99;background-color:#ffffff;height:50px;display:flex;justify-content: space-between;padding:10px 10px 10px 20px;box-sizing: border-box;align-items: center;}
+.header_mob a > img{width:40px;}
+.header_mob a > .logo{width:92px;}
+@keyframes slideIn {
+    0%{
+        left:100%;
+    }
+    100%{
+        left:0%;
+    }
+}
+.hidden_menu{display:none;position:absolute;top:0;left:0;background-color: #ffffff;z-index:999;width:100%;height:fit-content;}
+.hidden_menu.on{display:block;animation: cubic-bezier(.17,.67,.5,1.05) .5s slideIn;}
+
+.hidden_menu .hidden_top{width:100%;height:50px;display:flex;align-items: center;justify-content: right;}
+.hidden_menu .hidden_top a > img{width:28px;padding:3px;box-sizing: border-box;margin-right:15px;}
+.hidden_menu .hidden_top .home_btn{margin-right:40px;}
+.hidden_menu .hidden_top .close_btn{position: fixed;z-index: 99;}
+
+.hidden_menu .login > a{padding:20px;display:flex;align-items: center;text-decoration: none;color:inherit;}
+.hidden_menu .login > a > p{font-size:21px;font-weight:600;margin-right:8px;}
+.hidden_menu .login > a > img{width:20px;transform: rotate(180deg);}
+
+.hidden_menu .search{padding:20px;}
+.hidden_menu .search > input{background-image:url("../img/btn_menu_search.png");background-repeat:no-repeat;background-size:20px;background-position:right;width:100%;height:50px;font-size:17px;border:none;border-bottom:2px solid black;line-height:50px;}
+
+.hidden_menu .quick_menu{position:sticky;top:0;background-color:#ffffff;width:100%;overflow: scroll;white-space: nowrap;padding:50px 20px 10px 20px;/*margin-top:-50px;*/}
+.hidden_menu .quick_menu::-webkit-scrollbar{display:none;}
+.hidden_menu .quick_menu > ul{width:690px;display:flex;}
+.hidden_menu .quick_menu > ul > li{padding:7px 15px;border-radius: 20px;background-color: #f5f5f5;margin-right:10px;}
+.hidden_menu .quick_menu > ul > li.on{background-color:#3587ff;color:#fff;}
+.hidden_menu .quick_menu > ul > li > a{text-decoration: none;color:inherit;cursor: pointer;}
+
+.hidden_menu .menu_list{width:100%;}
+.hidden_menu .menu_list > span{display:block;height:35px;font-size:13px;padding:0 20px;font-weight:500;line-height:35px;background-color: #eff2f8;}
+.hidden_menu .menu_list > .depth1{width:100%;padding:18px 20px 40px;box-sizing: border-box;}
+.hidden_menu .menu_list .depth2 {cursor:pointer;font-weight:500;color:#222222;font-size:17px;display:flex;justify-content: space-between;padding:8px 0;}
+.hidden_menu .menu_list .depth2 > button{cursor:pointer;border:none;background-color: transparent;}
+.hidden_menu .menu_list .depth3{display:none;padding-left:15px;}
+.hidden_menu .menu_list .depth3.active{display:block;}
+.hidden_menu .menu_list .depth3 > li{font-size:15px;height:35px;line-height:35px;}
+.hidden_menu .menu_list .depth3 > li a{}
+
+.hidden_bg{display:none;position: absolute;top:0;left:0;width:100%;height:100vh;background-color: rgba(0,0,0,0.8);z-index: 99;}
+.hidden_bg.on{display:block;animation: ease-in .1s slide;}
+
+/** MobCont **/
+.content{padding:30px 20px;box-sizing: border-box;width:100%;}
+.content > a{box-shadow:0 3px 5px rgba(0,0,0,0.1);display:block;border-radius:50px;position:sticky;bottom:90px;left:calc(100% - 50px);opacity: 0.9;width:50px;height:50px;z-index: 99;}
+.content > a > img{width:50px;height:50px;}
+
+/** hr **/
+hr{width:100%;height:10px;background-color: #f9f9f9;margin:40px 0;border:none;}
+
+
+/** QuickMenu **/
+.main_quick{background-color: #ffffff;position:sticky;top:50px;z-index: 9;}
+.main_quick > ul{display:flex;justify-content: center;background-color: #ffffff;}
+.main_quick > ul > li{font-size:17px;width:30%;text-align: center;padding:19px 0 2px;}
+.main_quick > ul > li > a{text-decoration: none;color:inherit;}
+.main_quick > ul > li > .icon{transform:rotate(90deg) translate(-5px,0);font-size:14px;}
+.main_quick > ul > li.on{color:#066bfd;font-weight:600;}
+
+/** Service **/
+.service{margin-top:45px;padding-top:25px;}
+.service > p{font-size:21px;font-weight:600;color:#222222;padding-left:10px;}
+.service .slide{height:210px;margin-top:25px;}
+
+
+/** MobService **/
+.swiper_ser{width: 100%;margin-top:20px;height:215px;}
+.swiper_ser .swiper-slide{width: 100%;height:185px;padding:26px 0 0 30px;background-color:#f9f9f9;border-radius:20px;}
+.swiper_ser .swiper-slide > img{position:absolute;bottom:0;right:0;height:185px;}
+.swiper_ser .swiper-slide > img{animation:bounce 0.7s ease-in-out Infinite Alternate;}
+.swiper_ser .swiper-slide > div > p:first-child{font-size:14px;color:#444444;}
+.swiper_ser .swiper-slide > div > p:nth-child(2){margin-top:9px;font-size:17px;color:#222222;font-weight:600;}
+.swiper_ser .swiper-slide > div > p:nth-child(3){font-size:13px;color:#222222;font-weight:600;}
+.swiper_ser .swiper-pagination{text-align: center;margin-bottom:-10px;}
+
+/** MobFooter **/
+footer{width:100%;border-top:2px solid #222222;padding:30px 0 130px;text-align: center;}
+footer > p{font-size:13px;color:#767676;letter-spacing: -1px;margin-top:3px;}
+footer .privacy{width:fit-content;margin:auto;}
+footer .privacy > a{font-size:14px;text-decoration: none;color:inherit;}
+footer .privacy > a:first-child{margin-right:20px;}
+footer .privacy > a:nth-child(2){font-weight:500;}
+footer .call{display:flex;width:fit-content;margin:13px auto 25px;}
+footer .call > img{width:30px;margin-right:8px;}
+footer .call > p{font-size:21px;font-weight:600;}
+footer dl{letter-spacing:-1px;margin-top:3px;margin-right:15px;font-size:13px;color:#767676;display:flex;width:fit-content;}
+footer dl:last-child{margin-right:0;}
+footer dl dt{margin-right:5px;}
+footer .flex{margin:auto;display:flex;width:fit-content;}
+footer .flex{}
+
+
+/** MobQuickMenu**/
+.mob_quickmenu{z-index:99;position:fixed;bottom:0;left:0;width:100%;height:73px;background-color:#ffffff;padding:0 20px;border-radius: 20px 20px 0 0;box-shadow: 0 3px 12px rgba(0,0,0,0.2);}
+.mob_quickmenu > ul{display:flex;height:73px;}
+.mob_quickmenu > ul > li{cursor:pointer;padding:7px 0 5px;width:20%;text-align: center;font-size:12px;color:#767676;}
+.mob_quickmenu > ul > li > a > img{width:33%;}
+.mob_quickmenu > ul > li > a > img.oh{width:56px;margin-top:-15px;}
+
+.content #btn_top{box-shadow:0 3px 5px rgba(0,0,0,0.1);display:block;border-radius:50px;position:sticky;bottom:40px;right:0;opacity: 0.9;width:50px;height:50px;z-index:99;}
+.content #btn_top > img{width:50px;}
