@@ -11,7 +11,7 @@ function App() {
             width: window.innerWidth,
             height: window.innerHeight,
         });
-    }, 1000);
+    }, 500);
     useEffect(() => {
         window.addEventListener('resize', handleResize);
         return () => {

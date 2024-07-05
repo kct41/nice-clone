@@ -4,7 +4,7 @@
 .style .nice > p{font-size:23px;font-weight:600;color:#222222;line-height:29px;padding-left:10px;}
 @keyframes bounce {
     0% {
-        top:0px;
+        top:0;
     }
     100% {
         top:-10px;
@@ -64,20 +64,35 @@
 .swiper_rec .swiper-pagination{padding-left:10px;text-align: left;}
 
 /** Flip **/
-.swiper_flip{width: 100%;margin-top:20px;height:200px;overflow: hidden;}
-.swiper_flip .card{cursor:pointer;text-align:center;position: relative;transition: .4s;transform-style: preserve-3d;min-width:150px;width:30vw;height:200px;border-radius: 20px;}
-.swiper_flip .card:nth-child(1){background-color: #fdefe9;}
-.swiper_flip .card:nth-child(2){background-color: #e9f1fa;}
-.swiper_flip .card:nth-child(3){background-color: #eae6fd;}
-.swiper_flip .card:nth-child(4){background-color: #ddf9f8;}
-.swiper_flip .card:nth-child(5){background-color: #fefbed;}
-.swiper_flip .card:hover{transform: rotateX(180deg);}
-.swiper_flip .card .front ,.back{border-radius: 20px;width:100%;min-width:150px;height:200px;position: absolute;backface-visibility: hidden;}
-.swiper_flip .card .back{display:flex;align-items:center;justify-content:center;transform: rotateX(180deg);background-color: #066bfd;background-image: url("../img/@mainEvent_bg.png");background-repeat: no-repeat;background-position: right;}
-.swiper_flip .card .back > p{font-size:20px;color:#ffffff;font-weight:600;}
-.swiper_flip .card .front > img{width:100%;}
-.swiper_flip .card .front > p:nth-child(2){font-size:13px;letter-spacing: -1px;}
-.swiper_flip .card .front > p:nth-child(3){font-size:20px;font-weight:500;letter-spacing: -1px;}
+.swiper_flip{width:100%;margin-top:20px;height:200px;}
+/*.swiper_flip .card{cursor:pointer;text-align:center;position: relative;transition:transform .4s;transform-style: preserve-3d;min-width:150px;width:30vw;height:200px;border-radius: 20px;}*/
+/*.swiper_flip .card:nth-child(1){background-color: #fdefe9;}*/
+/*.swiper_flip .card:nth-child(2){background-color: #e9f1fa;}*/
+/*.swiper_flip .card:nth-child(3){background-color: #eae6fd;}*/
+/*.swiper_flip .card:nth-child(4){background-color: #ddf9f8;}*/
+/*.swiper_flip .card:nth-child(5){background-color: #fefbed;}*/
+/*.swiper_flip .card:hover{transform: rotateX(180deg);}*/
+/*.swiper_flip .card .front ,.back{-webkit-backface-visibility:hidden;backface-visibility:hidden;border-radius:20px;width:100%;min-width:150px;height:200px;position: absolute;}*/
+/*.swiper_flip .card .back{display:flex;align-items:center;justify-content:center;transform: rotateX(180deg);background-color: #066bfd;background-image: url("../img/@mainEvent_bg.png");background-repeat: no-repeat;background-position: right;}*/
+/*.swiper_flip .card .back > p{font-size:20px;color:#ffffff;font-weight:600;}*/
+/*.swiper_flip .card .front > img{width:100%;}*/
+/*.swiper_flip .card .front > p:nth-child(2){font-size:13px;letter-spacing: -1px;}*/
+/*.swiper_flip .card .front > p:nth-child(3){font-size:20px;font-weight:500;letter-spacing: -1px;}*/
+
+.flip-card{min-width:150px;width:30vw;height:200px;border-radius:20px;}
+.flip-card-inner{position:relative;min-width:150px;height:100%;border-radius:20px;text-align:center;transition: transform 0.6s;transform-style:preserve-3d;box-shadow:0 1px 1px 0 rgba(0,0,0,0.2);}
+.red{background-color: #fdefe9;}
+.blue{background-color: #e9f1fa;}
+.purple{background-color: #eae6fd;}
+.sky{background-color: #ddf9f8;}
+.yellow{background-color: #fefbed;}
+.flip-card:hover .flip-card-inner{transform:rotateY(180deg);}
+.flip-card-front,.flip-card-back{border-radius:20px;width:100%;min-width:150px;height:100%;position:absolute;-webkit-backface-visibility:hidden;backface-visibility:hidden;}
+.flip-card-front > img{width:100%;}
+.flip-card-front > p:nth-child(2){font-size:13px;letter-spacing:-1px;}
+.flip-card-front > p:nth-child(3){font-size:20px;font-weight:500;letter-spacing:-1px;}
+.flip-card-back{display:flex;align-items:center;justify-content:center;color:white;transform:rotateY(180deg);background-color:#066bfd;background-image:url("../img/@mainEvent_bg.png");background-repeat:no-repeat;background-position:right;}
+.flip-card-back > p{font-size:20px;color:#ffffff;font-weight:600;}
 
 /** Notice **/
 .notice{padding-top:45px;}
