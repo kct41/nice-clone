@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/nice-clone/static/css/main.b05e8dec.css",
-    "main.js": "/nice-clone/static/js/main.1b9efb5c.js",
+    "main.js": "/nice-clone/static/js/main.079ce9ea.js",
     "static/media/bg_service_1.png": "/nice-clone/static/media/bg_service_1.5cc2e107dcdaf5fc60bb.png",
     "static/media/bg_service_4.png": "/nice-clone/static/media/bg_service_4.bfb5ebdc93b3ad221671.png",
     "static/media/bg_service_5.png": "/nice-clone/static/media/bg_service_5.5d9c3f812533b306d7a4.png",
@@ -17,10 +17,10 @@
     "static/media/ok_new_banner.png": "/nice-clone/static/media/ok_new_banner.fa57fe5ec54397feec54.png",
     "index.html": "/nice-clone/index.html",
     "main.b05e8dec.css.map": "/nice-clone/static/css/main.b05e8dec.css.map",
-    "main.1b9efb5c.js.map": "/nice-clone/static/js/main.1b9efb5c.js.map"
+    "main.079ce9ea.js.map": "/nice-clone/static/js/main.079ce9ea.js.map"
   },
   "entrypoints": [
     "static/css/main.b05e8dec.css",
-    "static/js/main.1b9efb5c.js"
+    "static/js/main.079ce9ea.js"
   ]
 }
