@@ -18,7 +18,7 @@ function MobCont() {
         <>
             <div className="content">
                 <Routes>
-                    <Route index path="/" element={<MobHome/>}/>
+                    <Route index path="/nice-clone" element={<MobHome/>}/>
                     <Route path="/loan" element={<Loan/>}/>
                     <Route path="/login" element={<Login/>}/>
                 </Routes>
