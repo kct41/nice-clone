@@ -56,7 +56,7 @@ function WebNav() {
                     </div>
                     <div className="lower">
                         <NavLink to="/nice-clone">
-                            <a className="main_logo" href="#">
+                            <a className="main_logo">
                                 <img src={logo}/>
                             </a>
                         </NavLink>

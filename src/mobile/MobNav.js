@@ -41,7 +41,7 @@ function MobNav() {
         <>
             <div className="header_mob">
                 <NavLink to="/nice-clone">
-                    <a href="#">
+                    <a>
                         <img className="logo" src={logo}/>
                     </a>
                 </NavLink>
