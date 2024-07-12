@@ -1,48 +1,37 @@
 import logo from '../img/img_logo.png';
 import search from '../img/btn_menu_search_pc.png';
 import {NavLink} from "react-router-dom";
-import $ from 'jquery';
+import {useEffect} from 'react';
 
 function WebNav() {
 
-    // function addClass() {
-    //     const btn = document.querySelector('.header_web .gnb .lower > ul > li');
-    //     const hiddenMenu = document.querySelector('.header_web .gnb .lower > ul > li .submenu');
-    //     btn.classList.add('active');
-    //     hiddenMenu.classList.add('active');
-    // }
+    useEffect(() => {
+        const menus = document.querySelectorAll('.menu');
+        const submenus = document.querySelectorAll('.submenu');
+        const lis = document.querySelectorAll('.header_web .gnb .lower > ul > li');
 
+        const handleMouseOver = (index) => {
+            lis.forEach((li, i) => {
+                li.classList.toggle('active', i === index);
+                submenus[i].classList.toggle('active', i === index);
+            });
+        };
 
-    // $(".menu").click(function () {
-    //     const a = $(".menu").index(this);
-    //     $(".submenu").eq(a).slideDown(400);
-    // });
-
-    const menus = document.querySelectorAll('.menu');
-    const submenus = document.querySelectorAll('.submenu');
-    const lis = document.querySelectorAll('.header_web .gnb .lower > ul > li')
-
-    menus.forEach((menu, index) => {
-        menu.addEventListener('mouseover', function() {
-            submenus.forEach((submenu, i) => {
-                lis.forEach((li, i) => {
-                    if (index === i) {
-                        li.classList.add('active');
-                    } else {
-                        li.classList.remove('active');
-                    }
-                });
-
-                submenus.forEach((submenu, i) => {
-                    if (index === i) {
-                        submenu.classList.add('active');
-                    } else {
-                        submenu.classList.remove('active');
-                    }
-                });
+        menus.forEach((menu, index) => {
+            menu.addEventListener('mouseover', () => handleMouseOver(index));
+            menu.addEventListener('mouseleave', () => {
+                lis.forEach(li => li.classList.remove('active'));
+                submenus.forEach(submenu => submenu.classList.remove('active'));
             });
         });
-    });
+
+        return () => {
+            menus.forEach((menu, index) => {
+                menu.removeEventListener('mouseover', () => handleMouseOver(index));
+            });
+        };
+    }, []);
+
 
     return (
         <>

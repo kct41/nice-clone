@@ -8,34 +8,41 @@ import close from "../img/btn_menu_close.png";
 import home from "../img/btn_menu_home.png";
 import prev from "../img/ico_arr_prev.png";
 import {NavLink} from "react-router-dom";
+import {useEffect} from 'react';
 
 function MobNav() {
-    function showMenu() {
+    const showMenu = () => {
         document.querySelector('.hidden_bg').classList.add('on');
         document.querySelector('.hidden_menu').classList.add('on');
-    }
+    };
 
-    function closeMenu() {
+    const closeMenu = () => {
         document.querySelector('.hidden_bg').classList.remove('on');
         document.querySelector('.hidden_menu').classList.remove('on');
-    }
+    };
 
+    useEffect(() => {
+        const mores = document.querySelectorAll('.more');
+        const depths = document.querySelectorAll('.depth3');
 
-    const mores = document.querySelectorAll('.more');
-    const depths = document.querySelectorAll('.depth3');
-
-    mores.forEach((more, index) => {
-        more.addEventListener('click', function () {
-            depths.forEach((depth, i) => {
-                if (index === i) {
-                    depth.classList.add('active');
-                } else {
-                    depth.classList.remove('active');
-                }
+        mores.forEach((more, index) => {
+            more.addEventListener('click', () => {
+                depths.forEach((depth, i) => {
+                    depth.classList.toggle('active', index === i);
+                });
             });
         });
-    });
 
+        return () => {
+            mores.forEach((more, index) => {
+                more.removeEventListener('click', () => {
+                    depths.forEach((depth, i) => {
+                        depth.classList.toggle('active', index === i);
+                    });
+                });
+            });
+        };
+    }, []);
 
     return (
         <>
