@@ -17,7 +17,7 @@ function WebCont() {
         <>
             <div className="web_content">
                 <Routes>
-                    <Route path="/" element={<WebHome/>}/>
+                    <Route path="/nice-clone" element={<WebHome/>}/>
                     <Route path="/loan" element={<Loan/>}/>
                     <Route path="/login" element={<Login/>}/>
                 </Routes>
