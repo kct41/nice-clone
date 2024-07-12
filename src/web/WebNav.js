@@ -55,7 +55,7 @@ function WebNav() {
                         <a href="#">회원가입</a>
                     </div>
                     <div className="lower">
-                        <NavLink to="/">
+                        <NavLink to="/nice-clone">
                             <a className="main_logo" href="#">
                                 <img src={logo}/>
                             </a>
