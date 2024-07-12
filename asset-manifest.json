@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.aa903ab9.css",
-    "main.js": "/static/js/main.ed4ba430.js",
-    "static/media/bg_service_1.png": "/static/media/bg_service_1.5cc2e107dcdaf5fc60bb.png",
-    "static/media/bg_service_4.png": "/static/media/bg_service_4.bfb5ebdc93b3ad221671.png",
-    "static/media/bg_service_5.png": "/static/media/bg_service_5.5d9c3f812533b306d7a4.png",
-    "static/media/bg_recommand_card.png": "/static/media/bg_recommand_card.570b3ac2efdc22fdf856.png",
-    "static/media/bg_man.png": "/static/media/bg_man.79eb4268f7ebcda398f6.png",
-    "static/media/bg_service_2.png": "/static/media/bg_service_2.d24d30a8a7973bd9e580.png",
-    "static/media/bg_recommand_loan1.png": "/static/media/bg_recommand_loan1.07f6ea3dd8af9e064a31.png",
-    "static/media/bg_service_3.png": "/static/media/bg_service_3.bc43b1d2e293d0b1f946.png",
-    "static/media/kb_mywish_banner.png": "/static/media/kb_mywish_banner.a9e46f670c7774d1946f.png",
-    "static/media/bg_creditbefore.png": "/static/media/bg_creditbefore.8457184e53b4bb061c76.png",
-    "static/media/bnk_m_banner.png": "/static/media/bnk_m_banner.c78c0b7102f35b1f23e2.png",
-    "static/media/bg_recommand_loan2.png": "/static/media/bg_recommand_loan2.cc7fd233df873b2a85fa.png",
-    "static/media/ok_new_banner.png": "/static/media/ok_new_banner.fa57fe5ec54397feec54.png",
-    "index.html": "/index.html",
-    "main.aa903ab9.css.map": "/static/css/main.aa903ab9.css.map",
-    "main.ed4ba430.js.map": "/static/js/main.ed4ba430.js.map"
+    "main.css": "/nice-clone/static/css/main.b05e8dec.css",
+    "main.js": "/nice-clone/static/js/main.1b9efb5c.js",
+    "static/media/bg_service_1.png": "/nice-clone/static/media/bg_service_1.5cc2e107dcdaf5fc60bb.png",
+    "static/media/bg_service_4.png": "/nice-clone/static/media/bg_service_4.bfb5ebdc93b3ad221671.png",
+    "static/media/bg_service_5.png": "/nice-clone/static/media/bg_service_5.5d9c3f812533b306d7a4.png",
+    "static/media/bg_recommand_card.png": "/nice-clone/static/media/bg_recommand_card.570b3ac2efdc22fdf856.png",
+    "static/media/bg_man.png": "/nice-clone/static/media/bg_man.79eb4268f7ebcda398f6.png",
+    "static/media/bg_service_2.png": "/nice-clone/static/media/bg_service_2.d24d30a8a7973bd9e580.png",
+    "static/media/bg_recommand_loan1.png": "/nice-clone/static/media/bg_recommand_loan1.07f6ea3dd8af9e064a31.png",
+    "static/media/bg_service_3.png": "/nice-clone/static/media/bg_service_3.bc43b1d2e293d0b1f946.png",
+    "static/media/kb_mywish_banner.png": "/nice-clone/static/media/kb_mywish_banner.a9e46f670c7774d1946f.png",
+    "static/media/bg_creditbefore.png": "/nice-clone/static/media/bg_creditbefore.8457184e53b4bb061c76.png",
+    "static/media/bnk_m_banner.png": "/nice-clone/static/media/bnk_m_banner.c78c0b7102f35b1f23e2.png",
+    "static/media/bg_recommand_loan2.png": "/nice-clone/static/media/bg_recommand_loan2.cc7fd233df873b2a85fa.png",
+    "static/media/ok_new_banner.png": "/nice-clone/static/media/ok_new_banner.fa57fe5ec54397feec54.png",
+    "index.html": "/nice-clone/index.html",
+    "main.b05e8dec.css.map": "/nice-clone/static/css/main.b05e8dec.css.map",
+    "main.1b9efb5c.js.map": "/nice-clone/static/js/main.1b9efb5c.js.map"
   },
   "entrypoints": [
-    "static/css/main.aa903ab9.css",
-    "static/js/main.ed4ba430.js"
+    "static/css/main.b05e8dec.css",
+    "static/js/main.1b9efb5c.js"
   ]
 }
